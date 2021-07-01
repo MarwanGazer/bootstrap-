@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css\bootstrap.css">
+    <link rel="stylesheet" href="css\framework.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Roboto+Mono&family=Yomogi&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4202a788fe.js" crossorigin="anonymous"></script>
+    <script src="js\html5shiv.min.js"></script>
+    <script src="js\respond.min.js"></script>
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <h1><a class="navbar-brand" href="#">
+                    <div class="triangle"></div>
+                    <h2>Ma<span>ro</span><span>temp.</span></h2>
+                </a></h1>
+            <!-- ------------------------------- -->
+            <div class="collapse navbar-collapse in" id="navbarSupportedContent">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">about</a>
+                    </li>
+                    <li>
+                        <a href="#features">features</a>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown">more<span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="login.html" target="blank">sign in</a></li>
+                            <li><a href="#price">courses</a></li>
+                            <li><a href="#team">team</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- ------------------------------- -->
+        </div><!-- end of container -->
+    </nav>
+    <!-- end navbar -->
+    <!-- up -->
+    <a id="up" href="#"><i class="fas fa-chevron-up"></i></a>
+    <!-- up -->
+    <!-- start social media -->
+    <div class="sm">
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=100038105722216" target="blank"><i
+                        class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://codepen.io/marwangazer" target="blank"><i class="fab fa-codepen"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/MarwanGazer" target="blabk"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </div>
+    <!-- end social media -->
+    <!-- start carousal -->
+    <div id="slide" class="carousel slide" data-ride="carousel">
+        <div class="carousel-indicators hidden-xs hidden-sm">
+            <button type="button" data-target="#slide" data-slide-to="0" class="active"></button>
+            <button type="button" data-target="#slide" data-slide-to="1"></button>
+            <button type="button" data-target="#slide" data-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/carousel/germany.jpg" class="d-block w-100 visible-md" alt="...">
+                <img src="img/carousel/germany2.jpg" class="d-block w-100 visible-xs" alt="">
+                <img src="img/carousel/germany3.jpg" class="d-block w-100 visible-sm" alt="">
+                <img src="img/carousel/germany4.jpg" class="d-block w-100 visible-lg" alt="">
+                <div class="carousel-caption hidden-xs hidden-sm first">
+                    <h2>Germany</h2>
+                    <p>lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error minus consequuntur
+                        eveniet
+                        fuga temporibus? Voluptatum harum voluptas ipsum voluptatem quibusdam maiores ipsam corrupti
+                        nihil hic, dicta odio sed dolore? ipsum dolor sit amet consectetur adipisicing elit. Iure error
+                        minus consequuntur eveniet
+                        fuga temporibus? Voluptatum harum voluptas ipsum voluptatem quibusdam maiores ipsam corrupti
+                        nihil hic, dicta odio sed dolore?</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/carousel/america2.jpg" class="d-block w-100 visible-xs" alt="">
+                <img src="img/carousel/america.jpg" class="d-block w-100 visible-sm" alt="">
+                <img src="img/carousel/america3.jpg" class="d-block w-100 visible-lg" alt="">
+                <img src="img/carousel/america4.jpg" class="d-block w-100 visible-md" alt="">
+                <div class="carousel-caption hidden-xs hidden-sm second">
+                    <h2>English</h2>
+                    <p>lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error minus consequuntur
+                        eveniet
+                        fuga temporibus? Voluptatum harum voluptas ipsum voluptatem quibusdam maiores ipsam corrupti
+                        nihil hic, dicta odio sed dolore? ipsum dolor sit amet consectetur adipisicing elit. Iure error
+                        minus consequuntur eveniet
+                        fuga temporibus? Voluptatum harum voluptas ipsum voluptatem quibusdam maiores ipsam corrupti
+                        nihil hic, dicta odio sed dolore?</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/carousel/egypt.jpg" class="d-block w-100 visible-md" alt="...">
+                <img src="img/carousel/egypt2.jpg" class="d-block w-100 visible-xs" alt="">
+                <img src="img/carousel/egypt3.jpg" class="d-block w-100 visible-sm" alt="">
+                <img src="img/carousel/egypt4.jpg" class="d-block w-100 visible-lg" alt="">
+                <div class="carousel-caption hidden-xs hidden-sm third">
+                    <h2>Arabic</h2>
+                    <p>lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error minus consequuntur
+                        eveniet
+                        fuga temporibus? Voluptatum harum voluptas ipsum voluptatem quibusdam maiores ipsam corrupti
+                        nihil hic, dicta odio sed dolore? ipsum dolor sit amet consectetur adipisicing elit. Iure error
+                        minus consequuntur eveniet
+                        fuga temporibus? Voluptatum harum voluptas ipsum voluptatem quibusdam maiores ipsam corrupti
+                        nihil hic, dicta odio sed dolore?</p>
+                </div>
+            </div>
+        </div>
+        <button class="left carousel-control" type="button" data-target="#slide" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </button>
+        <button class="right carousel-control" type="button" data-target="#slide" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </button>
+    </div>
+    <!-- end carousal -->
+    <!-- start section about -->
+    <section id="about" class="about">
+        <div class="container about text-center">
+            <h2>check my new temlplate <span>ma<span>ro</span><span>temp.</span></span></h2>
+            <p class="lead">hello! feel free to use my first temlplate which is done by <span>bootstrab 3.2.0</span></p>
+        </div>
+    </section>
+    <!-- end section about -->
+    <!-- start section features -->
+    <section id="features" class="features">
+        <div class="container text-center text-capitalize">
+            <h2>our features</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="feature">
+                        <i class="fa fa-user-tie"></i>
+                        <h3>excellent teachers</h3>
+                        <p class="lead">have your lessons with the best teaahers only from you place</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="feature">
+                        <i class="fa fa-award"></i>
+                        <h3>daily practice</h3>
+                        <p class="lead">practice with more than one million student all over the world</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="feature">
+                        <i class="fa fa-user-graduate"></i>
+                        <h3>periodic reviews</h3>
+                        <p class="lead">great reviews to never forget what you learn</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="feature">
+                        <i class="fa fa-money-bill-wave"></i>
+                        <h3>best price</h3>
+                        <p class="lead">be a fluent in no time with a surprise price</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section features -->
+    <!-- start testimonials -->
+    <section id="features" class="testimonials text-center text-capitalize">
+        <div class="container">
+            <h2>what our clients say</h2>
+            <div id="slide2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <p class="lead">lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error minus
+                            consequuntur
+                            eveniet
+                            fuga temporibus? Voluptatum harum voluptas ipsum voluptatem quibusdam maiores ipsam corrupti
+                            nihil hic, dicta odio sed dolore? ipsum dolor sit amet consectetur adipisicing elit. Iure
+                            error
+                            minus consequuntur eveniet
+                            fuga temporibus? Voluptatum harum voluptas ipsum voluptatem quibusdam maiores ipsam corrupti
+                            nihil hic, dicta odio sed dolore?</p>
+                        <span>yousef zamharira</span>
+                    </div>
+                    <div class="item">
+                        <p class="lead">lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error minus
+                            consequuntur
+                            eveniet
+                            fuga temporibus? Voluptatum harum voluptas ipsum voluptatem quibusdam maiores ipsam corrupti
+                            nihil hic, dicta odio sed dolore? ipsum dolor sit amet consectetur adipisicing elit. Iure
+                            error
+                            minus consequuntur eveniet
+                            fuga temporibus? Voluptatum harum voluptas ipsum voluptatem quibusdam maiores ipsam corrupti
+                            nihil hic, dicta odio sed dolore?</p>
+                        <span>marwan gazer</span>
+                    </div>
+                    <div class="item">
+                        <p class="lead">lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error minus
+                            consequuntur
+                            eveniet
+                            fuga temporibus? Voluptatum harum voluptas ipsum voluptatem quibusdam maiores ipsam corrupti
+                            nihil hic, dicta odio sed dolore? ipsum dolor sit amet consectetur adipisicing elit. Iure
+                            error
+                            minus consequuntur eveniet
+                            fuga temporibus? Voluptatum harum voluptas ipsum voluptatem quibusdam maiores ipsam corrupti
+                            nihil hic, dicta odio sed dolore?</p>
+                        <span>ahmed elkharashy</span>
+                    </div>
+                </div>
+                <div class="carousel-indicators ">
+                    <button type="button" data-target="#slide2" data-slide-to="0" class="active">
+                        <img src="img/zamher.jfif" alt="">
+                    </button>
+                    <button type="button" data-target="#slide2" data-slide-to="1">
+                        <img src="img/marwan.jfif" alt="">
+                    </button>
+                    <button type="button" data-target="#slide2" data-slide-to="2">
+                        <img src="img/ahmed.jfif" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end testimonials -->
+    <!-- start price table -->
+    <section id="price" class="price">
+        <div class="container text-capitalize text-center">
+            <h2>course prices</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="plan plan1">
+                        <h3 class="text-primary">course #1</h3>
+                        <p>30$</p>
+                        <ul>
+                            <li>reviews : 2 / month</li>
+                            <li>exams : 1 / weak</li>
+                            <li>online chats : unavailable</li>
+
+                            <li>free books : 2</li>
+
+                        </ul>
+                        <button class="btn btn-primary text-capitalize">buy now</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="plan plan2">
+                        <h3 class="text-success">course #2</h3>
+                        <p>50$</p>
+                        <ul>
+                            <li>reviews : 4 / month</li>
+                            <li>exams : 2 / weak</li>
+                            <li>online chats : 1 freind</li>
+
+                            <li>free books : 5</li>
+
+                        </ul>
+                        <button class="btn btn-success text-capitalize">buy now</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="plan plan3">
+                        <h3 class="text-info">course #3</h3>
+                        <p>75$</p>
+                        <ul>
+                            <li>reviews : 2 / weak</li>
+                            <li>exams : 4 / weak</li>
+                            <li>online chats : 3 freinds</li>
+                            <li>free books : 10</li>
+
+                        </ul>
+                        <button class="btn btn-info text-capitalize">buy now</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="plan plan4">
+                        <h3 class="text-danger">course #4</h3>
+                        <p>99$</p>
+                        <ul>
+                            <li>reviews : 3 / weak</li>
+                            <li>exams : daily</li>
+                            <li>online chats : unlimited</li>
+
+                            <li>free books: 20</li>
+
+                        </ul>
+                        <button class="btn btn-danger text-capitalize">buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end price table -->
+    <!-- start team -->
+    <section id="team" class="team text-center text-capitalize">
+        <div class="data">
+            <div class="container">
+                <h2>Meet our awesome team</h2>
+                <div id="slide3" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <p class="lead"></p>
+                            <img src="img/avatar.jpg" alt="">
+                            <h3>marwan gazer</h3>
+                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis illo nemo,
+                                ut
+                                explicabo
+                                incidunt necessitatibus id optio, debitis omnis cupiditate vero quod cum? Iure
+                                consequuntur
+                                neque aliquid, praesentium magnam veniam.</p>
+                        </div>
+                        <div class="item">
+                            <p class="lead"></p>
+                            <img src="img/ahmed.jfif" alt="">
+                            <h3>ahmed elkharashy</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eos
+                                dignissimos,
+                                nisi perspiciatis sunt accusamus nam, cumque asperiores tempore ea impedit maiores ipsam
+                                molestias ducimus libero ex accusantium neque unde.</p>
+                        </div>
+                    </div>
+                    <button class="left carousel-control" type="button" data-target="#slide3" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    </button>
+                    <button class="right carousel-control" type="button" data-target="#slide3" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </button>
+                    <div class="carousel-indicators ">
+                        <button type="button" data-target="#slide3" data-slide-to="0" class="active"></button>
+                        <button type="button" data-target="#slide3" data-slide-to="1"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end team -->
+    <!-- start skills -->
+    <!-- <section class="skills">
+        <h2>our skills</h2>
+        <div class="container text-center text-capitalize">
+            <div class="row">
+                <div class="col-md-3">
+                    <div>
+                        <span class="html">html</span>
+                        <span class="css">css</span>
+                        <span class="java-script">Java Script</span>
+                        <span class="php">php</span>
+                        <span class="python">python</span>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-offset-1 col-md-offset-1">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- end skills -->
+    <!-- Start Section Subscribe -->
+
+    <section class="subscribe text-center wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
+        <div class="container">
+            <h2 class="h1">Keep In Touch</h2>
+            <p class="lead">Sign Up For Newsletter Dont Worry About Spam We Hate It Too.</p>
+            <form class="form-inline">
+                <input class="form-control input-lg" type="text" placeholder="Write Your Email">
+                <button class="btn btn-danger btn-lg"><i class="fa fa-edit fa-lg"></i> Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- End Section Subscribe -->
+
+    <!-- start statistics -->
+    <section class="statistics">
+        <div class="data">
+            <div class="container text-center text-capitalize">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <i class="fa  fa-users fa-5x"></i>
+                        <span>1,253,613</span>
+                        <p>users</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <i class="fas fa-star fa-5x"></i>
+                        <span>523,514</span>
+                        <p>rates</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <i class="fas fa-graduation-cap fa-5x"></i>
+                        <span>301,762</span>
+                        <p>graduates</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <i class="fas fa-comment fa-5x"></i>
+                        <span>632,154</span>
+                        <p>comments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- end statistics -->
+    <!-- start skills bootstrab -->
+    <section class="skills">
+        <h2>our skills</h2>
+        <div class="container text-center text-uppercase">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center-flex">
+                        <div class="progress">
+                            <div class="html progress-bar progress-bar-success  active" role="progressbar"
+                                aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" data-nm="67%"
+                                style="width:67%">html</div>
+                        </div>
+                        <div class="progress">
+                            <div class="css progress-bar progress-bar-danger  active" role="progressbar"
+                                aria-valuenow="71" aria-valuemin="0" aria-valuemax="100" data-nm="71%"
+                                style="width:71%">css</div>
+                        </div>
+                        <div class="progress">
+                            <div class="java-script progress-bar progress-bar-warning  active" role="progressbar"
+                                aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" data-nm="78%"
+                                style="width:78%">Java Script</div>
+                        </div>
+                        <div class="progress">
+                            <div class="php progress-bar progress-bar-info  active" role="progressbar"
+                                aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" data-nm="93%"
+                                style="width:93%">php</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end skills bootstrap -->
+    <!-- end contact us -->
+    <section class="contact" id="contact">
+        <div class="data">
+            <div class="container text-capitalize">
+                <i class="fas fa-headphones fa-5x"></i>
+                <h2>tell us what u feel</h2>
+                <h3>feel free to contact us</h3>
+                <div class="row">
+
+                    <form role="form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control input-lg" type="text" placeholder="username">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control input-lg" type="email" placeholder="email">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control input-lg" type="text" placeholder="language">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="form-control text-left" cols="30" rows="10"
+                                placeholder="messege"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-block btn-danger">contact us</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- start contact us -->
+    <!-- Start Ultimate Footer Section -->
+
+    <section class="footer">
+        <div class="container text-left">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h3>Sitemap</h3>
+                    <ul class="list-unstyled three-columns">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>features</li>
+                        <li>testimonials</li>
+                        <li>prices</li>
+                        <li>team</li>
+                        <li>ststidtics</li>
+                        <li>skills</li>
+                        <li>Contact</li>
+                    </ul>
+                    <ul class="list-unstyled social-list">
+                        <li><img src="img/social-bookmarks/facebook.png" width="48" height="48" alt="Facebook" /></li>
+                        <li><img src="img/social-bookmarks/gplus.png" width="48" height="48" alt="Google Plus" /></li>
+                        <li><img src="img/social-bookmarks/twitter.png" width="48" height="48" alt="Twitter" /></li>
+                        <li><img src="img/social-bookmarks/pinterest.png" width="48" height="48" alt="Pinterest" /></li>
+                        <li><img src="img/social-bookmarks/rss.png" width="48" height="48" alt="Rss" /></li>
+                        <li><img src="img/social-bookmarks/email.png" width="48" height="48" alt="Email" /></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3>Latest Articles</h3>
+
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="img/articles/01.jpg" width="64" height="64" alt="Image 01" />
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                teachers
+                            </h4>
+                            This Is Some Text Describing The Media Of Bootstrap 3.2.0
+                        </div>
+                    </div>
+
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="img/articles/02.jpg" width="64" height="64" alt="Image 02" />
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                collaborating
+                            </h4>
+                            This Is Some Text Describing The Media Of Bootstrap 3.2.0
+                        </div>
+                    </div>
+
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="img/articles/03.jpg" width="64" height="64" alt="Image 03" />
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                sites
+                            </h4>
+                            This Is Some Text Describing The Media Of Bootstrap 3.2.0
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <h3>Our Awesome Work</h3>
+                    <img class="img-thumbnail" src="img/work/01.jpg" width="150" height="100" alt="Image 01" />
+                    <img class="img-thumbnail" src="img/work/02.jpg" width="150" height="100" alt="Image 02" />
+                    <img class="img-thumbnail" src="img/work/03.jpg" width="150" height="100" alt="Image 03" />
+                    <img class="img-thumbnail" src="img/work/04.jpg" width="150" height="100" alt="Image 04" />
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            Copyright &copy; 2021 <span>Ma<span>ro</span><span>temp.</span></span>
+        </div>
+    </section>
+
+    <!-- End Ultimate Footer Section -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+</body>
+
+</html>
