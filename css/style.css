@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap");
 
 * {
     line-height: 2em;
@@ -7,7 +7,7 @@
     text-align: center;
     padding: 0;
     margin: 0;
-    font-family: 'Elsie', cursive;
+    font-family: "Elsie", cursive;
 }
 
 :root {
@@ -19,7 +19,7 @@
 
 @media screen {
     * {
-        font-family: 'Elsie', cursive;
+        font-family: "Elsie", cursive;
     }
 }
 
@@ -28,20 +28,23 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 /* Track */
+
 ::-webkit-scrollbar-track {
     background: #eee;
 }
 
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: var(--hover);
 }
 
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
     background: #fd0400;
 }
@@ -61,7 +64,13 @@ nav *:not(.navbar-brand .triangle, .navbar-brand h2, .navbar-brand h2 span) {
     color: #e41b17;
     letter-spacing: 1px;
 }
-
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse{
+    width: 100%;
+    margin-left: 0;
+}
+#navbarSupportedContent > ul{
+    margin-top: 20px;
+}
 .caret {
     color: revert;
 }
@@ -70,7 +79,7 @@ nav *:not(.navbar-brand .triangle, .navbar-brand h2, .navbar-brand h2 span) {
 .navbar>.container-fluid .navbar-brand h2 {
     color: var(--hover);
     line-height: revert;
-    font-family: 'Calligraffitti', cursive;
+    font-family: "Calligraffitti", cursive;
     font-size: 5rem;
     cursor: pointer;
     user-select: none;
@@ -81,7 +90,7 @@ nav *:not(.navbar-brand .triangle, .navbar-brand h2, .navbar-brand h2 span) {
 
 .navbar>.container .navbar-brand h2 span:first-child,
 .navbar>.container-fluid .navbar-brand h2 span:first-child {
-    color: #17E0E4;
+    color: #17e0e4;
     font-family: inherit;
 }
 
@@ -141,13 +150,13 @@ nav *:not(.navbar-brand .triangle, .navbar-brand h2, .navbar-brand h2 span) {
 .dropdown-menu .divider {
     background-color: var(--hover);
     color: var(--hover);
-    border-top: var(--hover)
+    border-top: var(--hover);
 }
 
 .dropdown-menu>li>a:hover {
     background-color: var(--hover);
     color: var(--navColor);
-    transition: padding .2s linear;
+    transition: padding 0.2s linear;
     padding-left: 25px;
 }
 
@@ -161,7 +170,9 @@ nav *:not(.navbar-brand .triangle, .navbar-brand h2, .navbar-brand h2 span) {
 }
 
 /* end nav */
+
 /* up */
+
 #up {
     color: #fff;
     background-color: rgb(24, 181, 209);
@@ -179,7 +190,9 @@ nav *:not(.navbar-brand .triangle, .navbar-brand h2, .navbar-brand h2 span) {
 }
 
 /* up */
+
 /* start carousel */
+
 .carousel {
     z-index: 12;
 }
@@ -204,7 +217,7 @@ textarea {
     width: 12px;
     height: 12px;
     margin: 0;
-    background-color: #fff
+    background-color: #fff;
 }
 
 .carousel-indicators .active {
@@ -239,10 +252,10 @@ textarea {
     background-color: rgba(51, 51, 51, 0.329);
 }
 
-
-
 /* end carousel */
+
 /* start section about */
+
 .about {
     text-transform: capitalize;
     background-color: var(--clr1);
@@ -259,7 +272,7 @@ textarea {
 }
 
 .about h2 span {
-    font-family: 'Calligraffitti', cursive;
+    font-family: "Calligraffitti", cursive;
     font-style: italic;
     font-weight: 900;
     font-size: larger;
@@ -267,7 +280,7 @@ textarea {
 }
 
 .about h2 span span:nth-child(1) {
-    font-family: 'Calligraffitti', cursive;
+    font-family: "Calligraffitti", cursive;
     font-style: italic;
     font-weight: 900;
     font-size: large;
@@ -275,7 +288,7 @@ textarea {
 }
 
 .about h2 span span:nth-child(2) {
-    font-family: 'Calligraffitti', cursive;
+    font-family: "Calligraffitti", cursive;
     font-style: italic;
     font-weight: 900;
     font-size: large;
@@ -287,9 +300,10 @@ textarea {
     font-style: italic;
 }
 
-
 /* end section about */
+
 /* start section features */
+
 .features {
     background-color: var(--clr2);
     display: flex;
@@ -300,6 +314,7 @@ textarea {
 /*  media   .feature{
     margin-bottom: 50px;
 } */
+
 h1,
 .h1,
 h2,
@@ -315,7 +330,6 @@ h3,
     margin-top: 0;
 }
 
-
 .features .fa {
     font-size: 50px;
     color: #000;
@@ -330,10 +344,10 @@ h3,
     font-weight: bold;
 }
 
-
-
 /* end section features */
+
 /* start testimonials */
+
 .testimonials {
     background-color: var(--clr1);
 }
@@ -366,15 +380,14 @@ h3,
     border: none;
     margin: 10px;
     user-select: none;
-    opacity: .5;
-    transition: all .3s;
+    opacity: 0.5;
+    transition: all 0.3s;
 }
 
 .testimonials .carousel-indicators button.active {
     height: 90px;
     width: 90px;
     opacity: 1;
-
 }
 
 .testimonials img {
@@ -383,7 +396,9 @@ h3,
 }
 
 /* end testimonials */
+
 /* start price table */
+
 .price {
     background-color: var(--clr2);
     padding-bottom: 70px;
@@ -401,7 +416,7 @@ h3,
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.404);
     margin-top: 20px;
-    transition: transform .3s;
+    transition: transform 0.3s;
 }
 
 .price .plan:hover {
@@ -445,18 +460,20 @@ h3,
 }
 
 /* end price table */
+
 /* start team */
+
 .team {
-    background: url("/img/team2.jpg") no-repeat center center fixed;
+    background: url("../img/team2.jpg") no-repeat center center fixed;
     color: #fff;
     padding: 0;
-    height: 60vh;
+    min-height: 60vh;
 }
 
 .team .data {
-    height: 60vh;
+    min-height: 60vh;
     width: 100%;
-    background-color: rgba(3, 3, 3, .5);
+    background-color: rgba(3, 3, 3, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -498,9 +515,10 @@ h3,
     top: -123px;
 }
 
-
 /* end team */
+
 /* start skills */
+
 /* .skills h2 {
     font-size: 40px;
     position: relative;
@@ -568,39 +586,40 @@ h3,
     content: "90%";
     width: 820px;
 } */
-/* end skills */
 
+/* end skills */
 
 /* Start Section Subscribe */
 
 .subscribe {
-    background: #EEE;
+    background: #eee;
     min-height: auto;
 }
-
 
 .subscribe .h1 {
     color: #888;
     letter-spacing: 2px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .subscribe p {
-    margin-bottom: 30px
+    margin-bottom: 30px;
 }
 
 .subscribe .form-control {
     border-radius: 0;
     margin-right: -5px;
-    width: 300px
+    width: 300px;
 }
 
 .subscribe button {
-    border-radius: 0
+    border-radius: 0;
 }
 
 /* End Section Subscribe */
+
 /* start statistics */
+
 .statistics {
     background: url("../img/stats.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -620,21 +639,21 @@ h3,
     color: #fff;
 }
 
-
-
 .data {
     min-height: 50vh;
     width: 100%;
-    background-color: rgba(3, 3, 3, .5);
+    background-color: rgba(3, 3, 3, 0.5);
 }
 
 .statistics * {
-    color: #B6B5B5;
-    transition: color .5s;
+    color: #b6b5b5;
+    transition: color 0.5s;
 }
 
 /* end statistics */
+
 /* start skills bootstrap */
+
 .skills {
     background-color: var(--clr1);
 }
@@ -650,7 +669,7 @@ h3,
 
 body>section.skills>div>div>div>div {
     flex-direction: column;
-    align-items: center
+    align-items: center;
 }
 
 .progress {
@@ -679,7 +698,9 @@ body>section.skills>div>div>div>div {
 }
 
 /* end skills bootstrap*/
+
 /* start contact us */
+
 /* .contact{
     padding: 0;
     background: url(../img/contact.jpg) no-repeat center center fixed;
@@ -702,13 +723,14 @@ body>section.skills>div>div>div>div {
 } */
 
 /* dark mode */
+
 .contact {
     padding: 0;
     background: url(../img/contact.jpg) no-repeat center center fixed;
 }
 
 .data {
-    background-color: rgba(9, 9, 9, .8);
+    background-color: rgba(9, 9, 9, 0.8);
 }
 
 .contact .container {
@@ -738,15 +760,14 @@ body>section.skills>div>div>div>div {
 .contact textarea {
     background-color: #2d34367a;
     border: none;
-
 }
-
 
 /* end contact us */
 
 /* start footer */
 
 /* Start Ultimate Footer Section */
+
 .footer * {
     font-size: initial;
     text-align: left;
@@ -758,7 +779,7 @@ body>section.skills>div>div>div>div {
 
 .footer {
     background: #111;
-    color: #AAA;
+    color: #aaa;
     padding: 0;
     padding-top: 10px;
 }
@@ -771,11 +792,11 @@ body>section.skills>div>div>div>div {
 }
 
 .footer a {
-    color: #AAA;
+    color: #aaa;
 }
 
 .footer a:hover {
-    color: #FFF;
+    color: #fff;
 }
 
 .footer .three-columns {
@@ -819,20 +840,20 @@ body>section.skills>div>div>div>div {
 
 .footer .copyright {
     background: #333;
-    color: #AAA;
+    color: #aaa;
     margin-top: 30px;
     font-size: 18px;
     text-align: center;
 }
 
 .footer .copyright span {
-    font-family: 'Calligraffitti', cursive;
+    font-family: "Calligraffitti", cursive;
     color: var(--hover);
     font-size: xx-large;
 }
 
 .footer .copyright span span:first-child {
-    color: #17E0E4;
+    color: #17e0e4;
     font-size: smaller;
 }
 
@@ -850,7 +871,8 @@ body>section.footer>div.container>div>div:nth-child(2)>div>div {
 /* end footer */
 
 /* start media */
-@media (max-width:1220px) {
+
+@media (max-width: 1220px) {
     .features>div>div>div>div {
         margin-bottom: 50px;
         margin-top: 50px;
@@ -865,13 +887,13 @@ body>section.footer>div.container>div>div:nth-child(2)>div>div {
     }
 }
 
-@media (min-width:1260px) and (max-width:1500px) {
+@media (min-width: 1260px) and (max-width: 1500px) {
     .carousel-caption {
         bottom: 10vh;
     }
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .subscribe .form-control {
         margin: auto;
         width: 100%;
@@ -884,6 +906,7 @@ body>section.footer>div.container>div>div:nth-child(2)>div>div {
 }
 
 /* start mobile screen */
+
 @media (max-width: 767px) {
 
     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
@@ -908,7 +931,7 @@ body>section.footer>div.container>div>div:nth-child(2)>div>div {
 
 /* srart small screen */
 
-@media (min-width: 768px) and (max-width:991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .statistics .row div {
         margin: 30px auto;
     }
@@ -916,9 +939,9 @@ body>section.footer>div.container>div>div:nth-child(2)>div>div {
 
 /* end small screen */
 
-
 /* srart medium screen */
-@media (min-width: 992px) and (max-width:1199px) {
+
+@media (min-width: 992px) and (max-width: 1199px) {
 
     .statistics .data .container,
     .statistics .data .container .row {
@@ -941,17 +964,15 @@ body>section.footer>div.container>div>div:nth-child(2)>div>div {
 
 /* end medium screen */
 
-
 /* start large screen */
-@media (min-width:1200px) {
+
+@media (min-width: 1200px) {
     .carousel-caption {
         bottom: 15vh;
     }
-
 }
 
 /* end large screen */
-
 
 /* end media */
 
